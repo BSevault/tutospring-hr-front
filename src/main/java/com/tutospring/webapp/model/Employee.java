@@ -1,7 +1,6 @@
 package com.tutospring.webapp.model;
 
 import lombok.Data;
-import org.springframework.stereotype.Component;
 
 @Data
 public class Employee {
@@ -15,4 +14,13 @@ public class Employee {
     private String mail;
 
     private String password;
+
+    public Employee(){}
+
+    public Employee(String firstName, String lastName, String mail, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.mail = mail;
+        this.password = password;
+    }
 }
